@@ -76,3 +76,5 @@ mini-services/
 
 # sandbox analysis scripts (contains session credentials — never commit)
 /scripts/
+
+AGENTS.md
