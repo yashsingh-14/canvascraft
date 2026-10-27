@@ -92,10 +92,13 @@ npm install
 ```
 
 ### 3. Configure Database
-Create a `.env` file in the project root:
+Create a `.env` file in the project root (or copy from `.env.example`):
 ```env
-# PostgreSQL Database URL (Supabase, Neon.tech, or Local Postgres)
-DATABASE_URL="postgresql://user:password@localhost:5432/canvascraft?sslmode=require"
+# Default: Zero-config SQLite (works instantly on Windows/Mac/Linux without external servers)
+DATABASE_URL="file:./dev.db"
+
+# Or if deploying with PostgreSQL (Supabase, Neon.tech, Docker, etc.):
+# DATABASE_URL="postgresql://user:password@localhost:5432/canvascraft?sslmode=require"
 ```
 
 ### 4. Push Schema & Seed Templates
