@@ -71,7 +71,7 @@ function ShareBody({ designId, designName, link, copied, onCopy }: {
           Share “{designName || 'Untitled design'}”
         </DialogTitle>
         <DialogDescription className="text-white/60">
-          Canvix is local-first: the link points back to your Canvix instance.
+          CanvasCraft is local-first: the link points back to your CanvasCraft instance.
         </DialogDescription>
       </DialogHeader>
 

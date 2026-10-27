@@ -1,6 +1,6 @@
 ﻿import { cn } from '@/lib/utils'
 
-/** Artify Studio gradient logo mark â€” stacked design layers */
+/** CanvasCraft logo mark â€” stacked design layers */
 export function LogoMark({ className, size = 36 }: { className?: string; size?: number }) {
   return (
     <svg
@@ -13,13 +13,13 @@ export function LogoMark({ className, size = 36 }: { className?: string; size?: 
       aria-hidden="true"
     >
       <defs>
-        <linearGradient id="canvix-grad" x1="4" y1="4" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+        <linearGradient id="canvascraft-grad" x1="4" y1="4" x2="44" y2="44" gradientUnits="userSpaceOnUse">
           <stop offset="0" stopColor="#00C4CC" />
           <stop offset="0.55" stopColor="#7D2AE8" />
           <stop offset="1" stopColor="#FF5C8A" />
         </linearGradient>
       </defs>
-      <rect width="48" height="48" rx="12" fill="url(#canvix-grad)" />
+      <rect width="48" height="48" rx="12" fill="url(#canvascraft-grad)" />
       {/* stacked design layers */}
       <rect x="12" y="10" width="24" height="8" rx="3" fill="#FFFFFF" fillOpacity="0.45" />
       <rect x="12" y="21" width="24" height="8" rx="3" fill="#FFFFFF" fillOpacity="0.7" />
@@ -37,14 +37,14 @@ export function Logo({ className, size = 32 }: { className?: string; size?: numb
       <span
         className="font-extrabold tracking-tight leading-none"
         style={{
-          fontSize: size * 0.62,
+          fontSize: size * 0.58,
           background: 'linear-gradient(120deg, #00C4CC 0%, #7D2AE8 55%, #FF5C8A 100%)',
           WebkitBackgroundClip: 'text',
           backgroundClip: 'text',
           color: 'transparent',
         }}
       >
-        canvix
+        CanvasCraft
       </span>
     </span>
   )

@@ -108,7 +108,7 @@ export function TopBar({ onSave, onShortcuts }: { onSave: () => Promise<void>; o
             Keyboard shortcuts
           </DropdownMenuItem>
           <DropdownMenuItem className="gap-2" asChild>
-            <a href="https://github.com/mir-ashiq/canvix" target="_blank" rel="noreferrer">
+            <a href="https://github.com/yashsingh-14/canvascraft" target="_blank" rel="noreferrer">
               <Github size={15} /> GitHub repository
             </a>
           </DropdownMenuItem>

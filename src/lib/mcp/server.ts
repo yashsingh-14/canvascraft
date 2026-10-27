@@ -62,11 +62,11 @@ function tokenMatches(expected: string, provided: string): boolean {
 }
 
 export function mcpTokenConfigured(): boolean {
-  return Boolean(process.env.CANVIX_MCP_TOKEN)
+  return Boolean((process.env.CANVASCRAFT_MCP_TOKEN || process.env.CANVASCRAFT_MCP_TOKEN))
 }
 
 export function checkAuth(req: NextRequest): JsonRpcResponse | null {
-  const expected = process.env.CANVIX_MCP_TOKEN ?? ''
+  const expected = (process.env.CANVASCRAFT_MCP_TOKEN || process.env.CANVASCRAFT_MCP_TOKEN) ?? ''
   if (!expected) {
     return {
       jsonrpc: '2.0',
@@ -74,7 +74,7 @@ export function checkAuth(req: NextRequest): JsonRpcResponse | null {
       error: {
         code: SERVER_NOT_CONFIGURED,
         message:
-          'The Canvix MCP server is disabled: set CANVIX_MCP_TOKEN in the server environment to enable it. See README → "AI agents (MCP)".',
+          'The CanvasCraft MCP server is disabled: set CANVASCRAFT_MCP_TOKEN in the server environment to enable it. See README → "AI agents (MCP)".',
       },
     }
   }
@@ -84,7 +84,7 @@ export function checkAuth(req: NextRequest): JsonRpcResponse | null {
     return {
       jsonrpc: '2.0',
       id: null,
-      error: { code: UNAUTHORIZED, message: 'Unauthorized — send "Authorization: Bearer <CANVIX_MCP_TOKEN>".' },
+      error: { code: UNAUTHORIZED, message: 'Unauthorized — send "Authorization: Bearer <CANVASCRAFT_MCP_TOKEN>".' },
     }
   }
   // spec security note: validate Origin when present (DNS-rebinding guard)
@@ -141,12 +141,12 @@ export function handleInitialize(msg: JsonRpcRequest): JsonRpcResponse {
         logging: {},
       },
       serverInfo: {
-        name: 'canvix',
+        name: 'canvascraft',
         version: SERVER_VERSION,
-        title: 'Canvix — open-source design tool',
+        title: 'CanvasCraft — open-source design tool',
       },
       instructions:
-        'Canvix is a self-hosted, open-source design tool. Every tool creates or edits REAL, editable designs: ' +
+        'CanvasCraft is a self-hosted, open-source design tool. Every tool creates or edits REAL, editable designs: ' +
         'create/generate designs, add text/shapes/images/tables/embeds, restyle, animate, comment and export (svg/png/json). ' +
         'Start with get_capabilities, then list_templates / search_designs. Edits made here appear live to humans in the editor.',
     },

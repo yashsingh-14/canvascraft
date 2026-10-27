@@ -23,7 +23,7 @@ export function AppsPanel() {
           ))}
           <div className="col-span-2 mt-1 rounded-xl border border-dashed border-white/12 p-3 text-center">
             <p className="text-[11px] text-white/40 leading-relaxed">
-              Artify apps are open â€”{' '}
+              CanvasCraft apps are open â€”{' '}
               <a
                 href="https://github.com/yashsingh-14/canvascraft"
                 target="_blank"

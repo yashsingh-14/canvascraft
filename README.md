@@ -1,6 +1,6 @@
 ﻿<div align="center">
 
-# 🎨 Artify Studio (CanvasCraft)
+# 🎨 CanvasCraft
 
 ### Next-Generation Open-Source Graphic Design Suite & Canva Alternative
 
@@ -12,7 +12,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)](./LICENSE)
 
 <p align="center">
-  <b>Artify Studio</b> is a powerhouse, community-driven graphic design platform built for creators, marketers, developers, and educators.
+  <b>CanvasCraft</b> is a powerhouse, community-driven graphic design platform built for creators, marketers, developers, and educators.
   Create beautiful social posts, presentations, posters, logos, and YouTube thumbnails with an ultra-responsive drag-and-drop HTML5 canvas editor, rich template libraries, AI-powered design layers, and multi-format vector exports.
 </p>
 
@@ -36,8 +36,8 @@
 - **Zero Lock-In:** All template geometries and styling are stored right in the repository (`src/lib/templates.ts`) and instantly seedable to your database.
 
 ### 🤖 AI Design Copilot & Magic Layers
-- **Magic Layers Decomposition:** Upload any flat image and let AI vision detect and reconstruct it into native editable Artify vector elements and text.
-- **Artify AI Assistant:** Chat copilot for generating headlines, captions, color palettes, and contextual translations.
+- **Magic Layers Decomposition:** Upload any flat image and let AI vision detect and reconstruct it into native editable CanvasCraft vector elements and text.
+- **CanvasCraft AI Assistant:** Chat copilot for generating headlines, captions, color palettes, and contextual translations.
 - **Background Removal:** Seamless browser-based background cutout powered by `@imgly/background-removal`.
 
 ### 👥 Real-Time Multiplayer Collaboration
@@ -60,7 +60,7 @@ canvascraft/
 │   ├── schema.prisma           # PostgreSQL models (Design, Template, Version, Presence)
 │   └── seed.ts                 # Template auto-loader script
 ├── public/                     # Static Brand Assets & Media
-│   ├── logo.svg                # Artify Studio brand mark
+│   ├── logo.svg                # CanvasCraft brand mark
 │   └── photos/                 # Curated starter stock imagery
 ├── src/
 │   ├── app/                    # Next.js 16 App Router
@@ -73,7 +73,7 @@ canvascraft/
 │   ├── lib/                    # Canvas algorithms, SVG export, and template definitions
 │   └── store/                  # Zustand global editor stores
 ├── package.json                # Project dependencies
-└── README.md                   # Artify Studio documentation
+└── README.md                   # CanvasCraft documentation
 ```
 
 ---
@@ -123,5 +123,5 @@ Open [http://localhost:3000](http://localhost:3000) to start designing!
 
 ---
 <div align="center">
-  <b>Artify Studio</b> • Craft Beautiful Designs Without Limits.
+  <b>CanvasCraft</b> • Craft Beautiful Designs Without Limits.
 </div>

@@ -2,7 +2,7 @@
   "name": "canvascraft",
   "version": "1.0.0",
   "private": false,
-  "description": "Artify Studio (CanvasCraft) - Free & open-source graphic design platform. A community-built Canva alternative with drag-and-drop editor, rich templates, shapes, AI layers, and instant export.",
+  "description": "CanvasCraft - Free & open-source graphic design platform. A community-built Canva alternative with drag-and-drop editor, rich templates, shapes, AI layers, and instant export.",
   "scripts": {
     "dev": "next dev -p 3000",
     "build": "next build && cp -r .next/static .next/standalone/.next/ && cp -r public .next/standalone/",
@@ -98,5 +98,10 @@
     "tailwindcss": "^4",
     "tw-animate-css": "^1.3.5",
     "typescript": "^5"
+  },
+  "author": "Yash Singh",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yashsingh-14/canvascraft.git"
   }
 }

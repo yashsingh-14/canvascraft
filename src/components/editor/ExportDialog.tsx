@@ -20,7 +20,7 @@ import {
 import { cn } from '@/lib/utils'
 
 function sanitizeFilename(name: string): string {
-  return (name || 'canvix-design').trim().toLowerCase().replace(/[^a-z0-9-_ ]/g, '').replace(/\s+/g, '-') || 'canvix-design'
+  return (name || 'canvascraft-design').trim().toLowerCase().replace(/[^a-z0-9-_ ]/g, '').replace(/\s+/g, '-') || 'canvascraft-design'
 }
 
 function triggerDownload(url: string, filename: string) {
@@ -206,7 +206,7 @@ export function ExportDialog({ open, onOpenChange }: { open: boolean; onOpenChan
                 </p>
                 <p>
                   {videoFormat ? (
-                    <>Format: <strong>{videoFormat.label}</strong>{videoFormat.extension === 'webm' && <> — this browser can’t encode MP4, so Canvix produces WebM (plays everywhere)</>}</>
+                    <>Format: <strong>{videoFormat.label}</strong>{videoFormat.extension === 'webm' && <> — this browser can’t encode MP4, so CanvasCraft produces WebM (plays everywhere)</>}</>
                   ) : (
                     <span className="text-red-500">This browser cannot record video — try Chrome or Edge.</span>
                   )}

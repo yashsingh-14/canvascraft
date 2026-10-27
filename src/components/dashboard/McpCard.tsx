@@ -29,14 +29,14 @@ export function McpCard() {
     }
   }, [])
 
-  const origin = typeof window !== 'undefined' ? window.location.origin : 'https://your-canvix.example.com'
+  const origin = typeof window !== 'undefined' ? window.location.origin : 'https://your-canvascraft.example.com'
   const endpoint = `${origin}/api/mcp`
   const clientConfig = JSON.stringify(
     {
       mcpServers: {
-        canvix: {
+        canvascraft: {
           url: endpoint,
-          headers: { Authorization: 'Bearer <CANVIX_MCP_TOKEN>' },
+          headers: { Authorization: 'Bearer <CANVASCRAFT_MCP_TOKEN>' },
         },
       },
     },
@@ -63,7 +63,7 @@ export function McpCard() {
         </div>
         <div className="flex-1 text-center sm:text-left">
           <div className="text-sm font-semibold flex items-center justify-center sm:justify-start gap-2 flex-wrap">
-            Let AI assistants design with Canvix
+            Let AI assistants design with CanvasCraft
             <span
               className={cn(
                 'inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide',
@@ -76,7 +76,7 @@ export function McpCard() {
               data-testid="mcp-status"
             >
               <span className={cn('h-1.5 w-1.5 rounded-full', status === 'enabled' ? 'bg-emerald-400' : status === 'disabled' ? 'bg-amber-400' : 'bg-white/40')} />
-              {status === 'enabled' ? 'Enabled' : status === 'disabled' ? 'Off — set CANVIX_MCP_TOKEN' : 'Checking…'}
+              {status === 'enabled' ? 'Enabled' : status === 'disabled' ? 'Off — set CANVASCRAFT_MCP_TOKEN' : 'Checking…'}
             </span>
           </div>
           <div className="text-xs text-white/40 mt-1">
@@ -92,7 +92,7 @@ export function McpCard() {
           <DialogContent className="max-w-lg bg-[#16171D] border-white/10 text-white">
             <DialogHeader>
               <DialogTitle className="flex items-center gap-2">
-                <Bot size={16} className="text-[#A78BFA]" /> Connect an AI agent to Canvix
+                <Bot size={16} className="text-[#A78BFA]" /> Connect an AI agent to CanvasCraft
               </DialogTitle>
             </DialogHeader>
 
@@ -100,8 +100,8 @@ export function McpCard() {
               <div className="flex items-start gap-2 text-[13px] text-white/70">
                 <KeyRound size={14} className="mt-0.5 shrink-0 text-[#A78BFA]" />
                 <p>
-                  <span className="text-white font-medium">1. Set a token.</span> On the server running Canvix, add{' '}
-                  <code className="rounded bg-white/10 px-1 py-0.5 text-[11px]">CANVIX_MCP_TOKEN=&lt;your-secret&gt;</code> to the environment and
+                  <span className="text-white font-medium">1. Set a token.</span> On the server running CanvasCraft, add{' '}
+                  <code className="rounded bg-white/10 px-1 py-0.5 text-[11px]">CANVASCRAFT_MCP_TOKEN=&lt;your-secret&gt;</code> to the environment and
                   restart. The endpoint stays disabled until then.
                 </p>
               </div>

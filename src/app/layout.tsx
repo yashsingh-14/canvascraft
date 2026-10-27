@@ -3,9 +3,8 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: "Canvix â€” Design anything, free forever",
-  description:
-    "Artify Studio is a vibrant, free & open-source graphic design platform. Create social posts, presentations, posters, logos and more with a drag-and-drop editor that works on desktop, tablet and mobile.",
+  title: "CanvasCraft — Design anything, free forever",
+  description: "CanvasCraft is a vibrant, free & open-source graphic design platform. Create social posts, presentations, posters, logos and more with a drag-and-drop editor that works on desktop, tablet and mobile.",
   keywords: [
     "artify studio", "canvascraft",
     "design tool",
@@ -15,13 +14,12 @@ export const metadata: Metadata = {
     "templates",
     "drag and drop editor",
   ],
-  authors: [{ name: "Yash Singh" }, { name: "Artify Studio" }],
-  icons: { icon: "/canvix.svg" },
+  authors: [{ name: "Yash Singh" }, { name: "CanvasCraft" }],
+  icons: { icon: "/canvascraft.svg" },
   openGraph: {
-    title: "Canvix â€” Design anything, free forever",
-    description:
-      "Free & open-source graphic design tool. A community-built Canva alternative.",
-    siteName: "Artify Studio",
+    title: "CanvasCraft — Design anything, free forever",
+    description: "CanvasCraft is a vibrant, free & open-source graphic design platform. Create social posts, presentations, posters, logos and more with a drag-and-drop editor that works on desktop, tablet and mobile.",
+    siteName: "CanvasCraft",
     type: "website",
   },
 };

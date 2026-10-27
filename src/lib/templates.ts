@@ -536,7 +536,7 @@ export const TEMPLATES: TemplateDef[] = [
           sh('rect', { x: 0, y: 0, width: 1240, height: 20, fill: '#0EA5E9' }),
           tx({ x: 70, y: 80, width: 500, height: 70, text: 'INVOICE', fontFamily: 'Archivo', bold: true, fontSize: 52, fill: '#0F172A', align: 'left', letterSpacing: 4 }),
           tx({ x: 70, y: 160, width: 500, height: 40, text: '# INV-2026-014', fontFamily: 'DM Mono', fontSize: 22, fill: '#64748B', align: 'left' }),
-          tx({ x: 770, y: 90, width: 400, height: 120, text: 'Studio Canvix\n42 Design Lane\nhello@studio.co', fontFamily: 'Inter', fontSize: 16, fill: '#334155', align: 'right', lineHeight: 1.6 }),
+          tx({ x: 770, y: 90, width: 400, height: 120, text: 'Studio CanvasCraft\n42 Design Lane\nhello@studio.co', fontFamily: 'Inter', fontSize: 16, fill: '#334155', align: 'right', lineHeight: 1.6 }),
           ln({ x: 70, y: 260, width: 1100, height: 0, stroke: '#E2E8F0', strokeWidth: 2 }),
           tx({ x: 70, y: 300, width: 250, height: 30, text: 'BILLED TO', fontFamily: 'Inter', bold: true, fontSize: 14, fill: '#94A3B8', align: 'left', letterSpacing: 2 }),
           tx({ x: 70, y: 335, width: 400, height: 100, text: 'Acme Corporation\n200 Sunrise Blvd\nAustin, TX', fontFamily: 'Inter', fontSize: 16, fill: '#334155', align: 'left', lineHeight: 1.6 }),

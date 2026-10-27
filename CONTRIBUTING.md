@@ -1,12 +1,12 @@
-# Contributing to Canvix
+# Contributing to canvascraft
 
 Thanks for helping build the open-source Canva alternative! 🎨
 
 ## Getting set up
 
 ```bash
-git clone https://github.com/mir-ashiq/canvix.git
-cd canvix
+git clone https://github.com/yashsingh-14/canvascraft.git
+cd canvascraft
 bun install
 cp .env.example .env
 bun run db:push

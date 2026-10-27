@@ -230,7 +230,7 @@ export function PhotosPanel() {
       )}
 
       <p className="text-[10.5px] text-white/30 mt-3 leading-relaxed">
-        Web results come from a live image search; bundled photos are AI-generated for Artify Studio. Check
+        Web results come from a live image search; bundled photos are AI-generated for CanvasCraft. Check
         photo licenses before commercial use of web results.
       </p>
     </PanelShell>

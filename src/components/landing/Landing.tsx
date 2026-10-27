@@ -142,7 +142,7 @@ export function Landing() {
       {/* â”€â”€ Nav â”€â”€ */}
       <header className="sticky top-0 z-50 border-b border-black/5 bg-white/80 backdrop-blur-lg">
         <nav className="mx-auto max-w-7xl px-4 sm:px-6 h-16 flex items-center justify-between">
-          <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} aria-label="Artify Studio home">
+          <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} aria-label="CanvasCraft home">
             <Logo size={30} />
           </button>
           <div className="hidden md:flex items-center gap-1 text-sm font-medium text-muted-foreground">
@@ -179,7 +179,7 @@ export function Landing() {
               <span className="text-brand-gradient">Free for everyone.</span>
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-base sm:text-lg text-muted-foreground animate-fade-up delay-200">
-              Artify Studio is the open-source design tool for social posts, presentations, posters, logos and
+              CanvasCraft is the open-source design tool for social posts, presentations, posters, logos and
               more. Drag, drop, export â€” right in your browser, on any device.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3 animate-fade-up delay-300">
@@ -221,7 +221,7 @@ export function Landing() {
             Everything you need to <span className="text-brand-gradient">create</span>
           </h2>
           <p className="mt-4 text-center text-muted-foreground max-w-2xl mx-auto">
-            A serious editor, not a toy. Artify Studio packs the features people actually use from
+            A serious editor, not a toy. CanvasCraft packs the features people actually use from
             commercial design tools â€” minus the price tag.
           </p>
           <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -296,7 +296,7 @@ export function Landing() {
                   The design tool that <span className="text-[#00C4CC]">belongs to you</span>
                 </h2>
                 <p className="mt-5 text-white/70 leading-relaxed">
-                  Commercial design tools lock your creativity behind subscriptions. Canvix is
+                  Commercial design tools lock your creativity behind subscriptions. CanvasCraft is
                   different â€” the code is on GitHub, the license is MIT, and every design you make
                   is exportable at full quality. Self-host it, fork it, improve it.
                 </p>
@@ -335,7 +335,7 @@ export function Landing() {
           <div className="flex items-center gap-3">
             <Logo size={24} />
             <span className="text-sm text-muted-foreground">
-              Â© 2026 Canvix Â· MIT License
+              Â© 2026 CanvasCraft Â· MIT License
             </span>
           </div>
           <div className="flex items-center gap-5 text-sm text-muted-foreground">
